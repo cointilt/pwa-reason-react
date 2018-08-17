@@ -1,0 +1,28 @@
+{
+  "name": "pwa-reason",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "build:js": "parcel build index.html",
+    "start": "bsb -make-world -w",
+    "start:js": "parcel index.html",
+    "dev": "npm-run-all --parallel start start:js",
+    "prod": "npm run build ; npm run build:js",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^4.0.3",
+    "npm-run-all": "^4.1.3",
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "reason-react": "^0.5.3"
+  }
+}
